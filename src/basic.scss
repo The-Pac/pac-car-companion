@@ -1,0 +1,51 @@
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: clip;
+  overflow-y: clip;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+button {
+  background: none;
+  border: none;
+  transition: filter .5s;
+}
+
+input {
+  background: none;
+  border: none;
+  transition: filter .5s;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+  display: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:disabled, button:disabled {
+  transition: filter .5s;
+  filter: saturate(0%);
+}
+
